@@ -108,14 +108,14 @@ const ChartComponent: React.FC<Month> = (month) => {
         },
 
       },
-      height: '300',
+      height: 300,
       type: 'donut',
       offsetX: 0,
       selection: {
         enabled: true
       },
       zoom: {
-        enabled: false,
+        enabled: true,
         type: 'x',
         autoScaleYaxis: false,
         zoomedArea: {
@@ -251,6 +251,8 @@ const ChartComponent: React.FC<Month> = (month) => {
         options={options}
         series={options.series}
         type="donut"
+        width="100%"
+        height="300"
       />
   );
 }
